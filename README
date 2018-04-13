@@ -10,4 +10,6 @@ curl https://www.metaweather.com/api/location/2459115/ -o /<directory>/nyc_weath
 Colors are controlled by the server backend numbers as in example, 5=red, 6=green, 7=yellow
 Brightness can be controlled by changing the analog write frequency of the led library on the device
 
+Wiring is straight forward, just hook up the pins to the NodeMCU as defined in the library, you can also change them to make the wiring easier.  The power cable that comes with the display should be spliced and connected to the nodemcu 3v3 connector for power (black is ground, red is positive 3v).  The nodemcu provides ample power to drive this display with no negative side effects from what I can tell after 3 weeks of testing.
+
 I've left it up to the reader to decide how to retrieve and update subways data if they want an arrivals display
