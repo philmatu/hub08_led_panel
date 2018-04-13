@@ -1,3 +1,13 @@
-A cron will need to be set up to get the nyc_weather_dump file
+This runs on a nodemcu like this one:
+https://www.amazon.com/HiLetgo-Internet-Development-Wireless-Micropython/dp/B010O1G1ES
 
+You'll also need a hub08 display like this one:
+https://www.aliexpress.com/item/Indoor-P4-75-RG-SMD-LED-Module-304-76mm-1-16-Scan-Hub08-Store-LED-Moving/32844347325.html?spm=a2g0s.9042311.0.0.KQXW2u
+
+A cron will need to be set up to get the nyc_weather_dump file
 curl https://www.metaweather.com/api/location/2459115/ -o /<directory>/nyc_weather_dump > /dev/null 2>&1
+
+Colors are controlled by the server backend numbers as in example, 5=red, 6=green, 7=yellow
+Brightness can be controlled by changing the analog write frequency of the led library on the device
+
+I've left it up to the reader to decide how to retrieve and update subways data if they want an arrivals display

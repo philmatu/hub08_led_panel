@@ -40,6 +40,7 @@ void LEDMatrix::begin(uint8_t *displaybuf, uint16_t width, uint16_t height) {
     pinMode(clk, OUTPUT);
     pinMode(stb, OUTPUT);
 
+    //this controls brightness from what I've seen -PM
     analogWriteFreq(40000000);
     
 }
